@@ -1986,4 +1986,26 @@
                 // Close all
                 document.querySelectorAll('.faq-item').forEach(i => {
                     i.classList.remove('active');
-                    i.querySelector('.faq-quest
+                    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                // Open clicked (if not already open)
+                if (!isActive) {
+                    item.classList.add('active');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Scroll animation observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
