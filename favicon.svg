@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#1a3c24"/>
+  
+  <!-- Inner circle border -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#3d8b54" stroke-width="8" opacity="0.4"/>
+  
+  <!-- Rolling hills at base -->
+  <ellipse cx="180" cy="380" rx="180" ry="50" fill="#2d6a3f"/>
+  <ellipse cx="350" cy="390" rx="160" ry="45" fill="#1a3c24"/>
+  <ellipse cx="256" cy="395" rx="220" ry="55" fill="#3d8b54" opacity="0.5"/>
+  
+  <!-- Tree trunk -->
+  <rect x="240" y="240" width="32" height="130" rx="6" fill="#6b4226"/>
+  <rect x="246" y="240" width="10" height="130" rx="4" fill="#7d5432" opacity="0.5"/>
+  
+  <!-- Tree canopy - layered ellipses for depth -->
+  <ellipse cx="256" cy="195" rx="95" ry="85" fill="#1a3c24"/>
+  <ellipse cx="230" cy="180" rx="65" ry="60" fill="#2d6a3f"/>
+  <ellipse cx="280" cy="175" rx="58" ry="55" fill="#3d8b54"/>
+  <ellipse cx="256" cy="160" rx="45" ry="42" fill="#5cb176"/>
+  <ellipse cx="240" cy="150" rx="28" ry="25" fill="#6ec488" opacity="0.6"/>
+  
+  <!-- Subtle highlight on canopy -->
+  <ellipse cx="268" cy="145" rx="20" ry="18" fill="#8dd4a0" opacity="0.3"/>
+</svg>
